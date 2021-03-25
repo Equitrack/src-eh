@@ -44,9 +44,9 @@ x: representa el permiso de ejecución
 chmod o+r <nombre del fichero>
 ```
 
-- Quitar permiso de escritura[w] al grupo "desarrolladores"[g] <br>
-Si nuestro archivo tiene la siguiente estructura al ejecutar '$ ls -l':
-
+Si nuestro archivo tiene la siguiente estructura al ejecutar '$ ls -l': <br>
+-rw-r--r--. 1 tony desarrolladores 1.5K Mar 24 21:53 permisos.md <br>
+- Para quitar permiso de escritura[w] al grupo desarrolladores[g] <br>
 ```
-chmod 
+chmod g-w <nombre del archivo>
 ```
