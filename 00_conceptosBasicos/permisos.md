@@ -29,5 +29,6 @@ Por defecto al crear ficheros en el directorio /home/$user, asignará el grupo d
 ## Cambio de permisos
 
 Si se es el propietario de un fichero, o el usuario root. Se pueden modificar los archivos. <br>
-El comando para modificar los archivos es <bold>chmod</bold>
+El comando para modificar los archivos es <strong>chmod</strong>
+
 
