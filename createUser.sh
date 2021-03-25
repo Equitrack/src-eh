@@ -4,5 +4,10 @@
 nameUser="Alexander"
 
 # Create user and directory
-sudo useradd -m -s /bin/bash $nameUser
+sudo useradd -m $nameUser
 
+# Add user to sudo
+sudo usermod -aG wheel $nameUser
+
+# Delelte user
+# sudo userdel -r $nameUser
