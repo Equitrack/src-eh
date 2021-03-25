@@ -8,6 +8,7 @@ Estos persmisos son:
 
 Ejemplo:
 ```
+$ ls -l
 -rw-r--r--. 1 tony tony 167 Mar 24 21:31 permisos.md
 ```
 
@@ -21,6 +22,12 @@ Las tercias de carácteres, se asignan de la siguiente forma:
 
 Cada tercia contiene los permisos. 
 
-[-rw-r--r--. 1 tony tony]
+[-rw-r--r--. 1 tony tony] <br>
 Lo siguiente es el propietario del archivo, y lo segundo al grupo al que pertenece. <br>
-Por defecto al crear ficheros en el directorio /home/$user, asignará el grupo del propietario.
+Por defecto al crear ficheros en el directorio /home/$user, asignará el grupo del propietario.<br>
+
+## Cambio de permisos
+
+Si se es el propietario de un fichero, o el usuario root. Se pueden modificar los archivos. <br>
+El comando para modificar los archivos es <bold>chmod</bold>
+
