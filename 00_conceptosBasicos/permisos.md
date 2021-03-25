@@ -50,3 +50,8 @@ Si nuestro archivo tiene la siguiente estructura al ejecutar '$ ls -l': <br>
 ```
 chmod g-w <nombre del archivo>
 ```
+
+También se pueden hacer estas operaciones de cambio de permisos separando por comas cada una:
+```
+chmod u+r, g-x, o-w <nombre del fichero>
+```
