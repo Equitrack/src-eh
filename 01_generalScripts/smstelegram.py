@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 
 url = 'https://api.telegram.org/bot'
@@ -26,4 +27,4 @@ if response.status_code == 200:
     print(json.dumps(json.loads(response.text), indent = 4, sort_keys=True))
 
 else:
-    print("status code: " + response.status_code)
+    print("status code: " + str(response.status_code))
