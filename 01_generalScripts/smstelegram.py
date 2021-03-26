@@ -3,7 +3,7 @@ import requests
 
 url = 'https://api.telegram.org/bot'
 
-jsonData = {'chat_id': '-595788453',
+jsonData = {'chat_id': '-100595788453',
             'text': 'MessageTest',
             'disable_notification': 'true'}
 
