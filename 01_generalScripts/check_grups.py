@@ -7,11 +7,9 @@ url = "https://api.telegram.org/bot" + token + "/getUpdates"
 
 response = requests.get(url)
 
-jsonHeaders = response.headers
-content = response.text
+# Muestra los headers de respuesta
+for i in response.headers:
+    print(i + ":" + response.headers[i])
 
-print(jsonHeaders)
-
-for i in jsonHeaders:
-    print(i + ":" + i[0])
+print(response.status_code)
 
