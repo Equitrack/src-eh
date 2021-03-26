@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 import requests
-import os.path
-from os import path
+import json
 
 token = "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
 
@@ -19,9 +18,7 @@ if response.status_code == 200:
     f.write(response.text)
     f.close()
     print("Create: response.json [OK]")
-
-    jsonResponse = response.text
-    print(jsonResponse[1])
+    print(json.dumps(response.text))
 
 else:
     print("Status code: " + response.status_code)
