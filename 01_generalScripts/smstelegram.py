@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 import requests
 import json
-import os
+import sys
 
 url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" + "/sendMessage"
-f = os.system('date')
-mensaje= "Primera cadena: " + "segunda cadena"
+mensaje= "Primera cadena: " + str(sys.argv)[1]
 
 
 jsonData = {'chat_id': '-595788453',
