@@ -20,8 +20,8 @@ if response.status_code == 200:
     f.close()
     print("Create: response.json [OK]")
 
-    for i in response.text:
-        print(i)
+    jsonResponse = response.text
+    print(jsonResponse[1])
 else:
     print("Status code: " + response.status_code)
 
