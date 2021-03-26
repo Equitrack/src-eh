@@ -21,7 +21,7 @@ if response.status_code == 200:
     responseDict = json.loads(response.text)
 
     for key in responseDict:
-        print(key + ": " + str(responseDict[key])
+        print(key + ": " + str(json.loads(response.text)[key])
 
 else:
     print("Status code: " + response.status_code)
