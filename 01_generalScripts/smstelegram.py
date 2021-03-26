@@ -4,7 +4,9 @@ import json
 import os
 
 url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" + "/sendMessage"
-mensaje= "Hora del sistema: " + os.system('date')
+ENV = os.system('date')
+mensaje= str("Hora del servidor: " + ENV)
+
 
 jsonData = {'chat_id': '-595788453',
             'text': mensaje,
