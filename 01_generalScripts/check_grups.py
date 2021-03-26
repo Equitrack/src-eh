@@ -18,10 +18,8 @@ if response.status_code == 200:
     f.write(response.text)
     f.close()
     
-    responseDict = json.loads(response.text)
-
-    for key in responseDict:
-        print(key + ": " + str(json.loads(response.text)[key])
+    for j in json.loads(response.text).keys():
+        print(j + ": " + str(json.loads(response.text).keys()[j]))
 
 else:
     print("Status code: " + response.status_code)
