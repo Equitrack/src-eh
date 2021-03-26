@@ -11,4 +11,9 @@ if str(len(sys.argv)) == "1":
     print('Examples:')
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py -f logs.txt')
-print("Parámetro n: " + str(sys.argv[1]))
+
+elif str(len(sys.argv)) == "3":
+    print(str(sys.argv[1]))
+
+else
+    print("else")
