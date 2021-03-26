@@ -22,6 +22,7 @@ if response.status_code == 200:
 
     jsonResponse = response.text
     print(jsonResponse[1])
+
 else:
     print("Status code: " + response.status_code)
 
