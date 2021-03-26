@@ -1,1 +1,1 @@
-{"ok":true,"result":{"message_id":5,"from":{"id":1420238693,"is_bot":true,"first_name":"equitrack","username":"equitrackbot"},"chat":{"id":-595788453,"title":"Automatic Messages","type":"group","all_members_are_administrators":true},"date":1616800715,"text":"MessageTest"}}
+{"ok":true,"result":{"message_id":6,"from":{"id":1420238693,"is_bot":true,"first_name":"equitrack","username":"equitrackbot"},"chat":{"id":-595788453,"title":"Automatic Messages","type":"group","all_members_are_administrators":true},"date":1616800862,"text":"mensaje desde una variable"}}

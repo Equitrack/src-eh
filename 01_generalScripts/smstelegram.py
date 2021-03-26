@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import requests
 import json
+import os
 
 url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" + "/sendMessage"
+mensaje= 'mensaje desde una variable'
 
 jsonData = {'chat_id': '-595788453',
-            'text': 'MessageTest',
+            'text': mensaje,
             'disable_notification': 'true'}
 
 header = {"Content-Type": "application/json"}
