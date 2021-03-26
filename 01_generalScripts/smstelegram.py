@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import requests
 
-url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
+url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" + "/sendMessage"
 
 jsonData = {'chat_id': '-595788453',
             'text': 'MessageTest',
@@ -10,7 +10,7 @@ jsonData = {'chat_id': '-595788453',
 header = {"Content-Type": "application/json"}
 
 #use the 'headers' parameter to set the HTTP headers:
-response = requests.post(url, jsonData, headers=header)
+response = requests.post(url, jsonData, header)
 
 # Muestra los headers de respuesta
 for i in response.headers:
@@ -28,3 +28,4 @@ if response.status_code == 200:
 
 else:
     print("status code: " + str(response.status_code))
+
