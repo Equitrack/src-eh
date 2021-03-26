@@ -14,6 +14,7 @@ for i in response.headers:
 
 
 if response.status_code == 200:
-    print("\n" + response.text + "\n")
+    print("\n[***Response:***]\n")
+    print( response.text + "\n")
 else:
     print("Status code: " + response.status_code)
