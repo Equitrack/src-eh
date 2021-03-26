@@ -1,6 +1,8 @@
 #!/bin/python3
 import sys
 
-print("Número de parámetros: " + str(len(sys.argv)))
-print("Parámetro n: " + str(sys.argv)[1])
-print("Contenido del parámetro n: ")
+# verificar que haya parámetros
+if str(len(sys.argv)) == 1:
+    print("Solo un parámetro")
+
+# print("Parámetro n: " + str(sys.argv[1]))
