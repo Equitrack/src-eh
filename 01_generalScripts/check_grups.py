@@ -15,8 +15,10 @@ for i in response.headers:
     print(i + ": " + response.headers[i])
 
 if response.status_code == 200:
-    print("\n[***Response:***]\n")
-    print( response.text + "\n")
+    f = open("response.json", "w")
+    f.write(response.text)
+    f.close()
+    print("Create: response.json [OK]")
 else:
     print("Status code: " + response.status_code)
 
