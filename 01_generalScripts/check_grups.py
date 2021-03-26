@@ -11,8 +11,7 @@ jsonHeaders = response.headers
 content = response.text
 
 print(jsonHeaders)
-print("status code: " + response.status_code)
 
 for i in jsonHeaders:
-    print(i + ":" + jsonHeaders[i])
+    print(i + ":" + i[0])
 
