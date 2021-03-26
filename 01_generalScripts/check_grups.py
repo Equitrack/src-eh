@@ -18,8 +18,9 @@ if response.status_code == 200:
     f.write(response.text)
     f.close()
     
-    for j in json.loads(response.text).keys():
-        print(j + ": " + str(json.loads(response.text).keys()[j]))
+    # Pretty Printing JSON string back
+    print(json.dumps(json.loads(response.text), indent = 4, sort_keys=True))
+        
 
 else:
     print("Status code: " + response.status_code)
