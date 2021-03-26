@@ -5,4 +5,4 @@ MESSAGE="MensajeDePrueba"
 
 jsonData='{"chat_id":''"'$CHAT_ID'"','"text"':'"'$MESSAGE'"','"disable_notification":true}';
 
-curl -I -X POST -H "Content-Type: application/json" -d "'"$jsonData"'" "$API/$TOKEN/sendMessage"
+curl -X POST -H '"'"Content-Type: application/json"'"' -d "'"$jsonData"'" "$API/$TOKEN/sendMessage"
