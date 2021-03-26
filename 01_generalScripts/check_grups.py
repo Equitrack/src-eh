@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import requests
 
 token = "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
@@ -5,5 +7,11 @@ url = "https://api.telegram.org/bot" + token + "/getUpdates"
 
 response = requests.get(url)
 
-print(response.headers)
-print(response.text)
+jsonHeaders = response.headers
+content = response.text
+
+print(jsonHeaders)
+
+for i in jsonHeaders:
+    print(i)
+
