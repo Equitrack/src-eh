@@ -11,14 +11,15 @@ response = requests.get(url)
 
 # Muestra los headers de respuesta
 for i in response.headers:
-    print(i + ": " + response.headers[i])
+    print(i + ": " + response.headers[i] + "\n")
 
 if response.status_code == 200:
     f = open("response.json", "w")
     f.write(response.text)
     f.close()
-    print("Create: response.json [OK]")
-    print(json.dumps(response.text))
+    
+    for i in json.dumps(response.text):
+        print(0)
 
 else:
     print("Status code: " + response.status_code)
