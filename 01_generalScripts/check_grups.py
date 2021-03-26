@@ -10,11 +10,10 @@ response = requests.get(url)
 
 # Muestra los headers de respuesta
 for i in response.headers:
-    print(i + ":" + response.headers[i])
+    print(i + ": " + response.headers[i])
 
 
-if response.status_code == "200":
-    print(response.text)
+if response.status_code == 200:
+    print("\n" + response.text + "\n")
 else:
     print("Status code: " + response.status_code)
-
