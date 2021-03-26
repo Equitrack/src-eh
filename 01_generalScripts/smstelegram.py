@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import requests
 
-url = 'https://api.telegram.org/bot'
+url = 'https://api.telegram.org/bot' + "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
 
 jsonData = {'chat_id': '-595788453',
             'text': 'MessageTest',
