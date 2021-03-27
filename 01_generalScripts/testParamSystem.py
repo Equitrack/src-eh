@@ -16,8 +16,14 @@ def useError():
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py --loadFile logs.txt')
 
-def checkFile(nameFile):
-    print("Check if exist: " + str(path.exists(nameFile)))
+def checkFile(nameFile, option):
+    if path.exists(nameFile) == True:
+        sendMessage(option)
+    else:
+        print("The file: " + '"' + nameFile + '"' + " does not exists")
+
+def sendMessage(option):
+    print("Option: " + option)
 
 # validate correct num of params
 if numArgs == "3":
@@ -31,14 +37,13 @@ if numArgs == "3":
         print("Send message")
 
     elif nameArgs == "-l" or nameArgs == "--load":
-        checkFile(message)
-        print("Send file")
+        checkFile(message, "load")
 
     elif nameArgs == "-r" or nameArgs == "--read":
-        checkFile(str(sys.argv[2]))
-        print("Read File")
+        checkFile(message, "read")
 
     else:
         useError()
 else:
     useError()
+
