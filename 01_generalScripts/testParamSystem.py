@@ -24,13 +24,12 @@ def checkFile(nameFile, option):
         print("The file: " + '"' + nameFile + '"' + " does not exists")
 
 def sendMessage(option):
-    print("Option: " + option)
+    # Check type data: message, load or read file.
+
+    # . . . [ Continue ]
 
 # validate correct num of params
 if numArgs == "3":
-
-    #nameArgs = str(sys.argv[1])
-    #message = str(sys.argv[2])
 
     # Select mode use
 
