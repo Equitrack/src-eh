@@ -10,11 +10,12 @@ def useError():
     print("Use:")
     print("./testParamSystem.py <option> <file/text>")
     print("Options:")
-    print("\t-m\tSend message")
-    print("\t-f\tRead file and send message")
+    print("\t-m, --message\tSend message")
+    print("\t-l, --load\tSend file")
+    print("\t-r, --read\tRead file and send message")
     print('Examples:')
     print('\t./testParamSystem.py -m "Low disk space"')
-    print('\t./testParamSystem.py -f logs.txt')
+    print('\t./testParamSystem.py --loadFile logs.txt')
 
 if nArgs == "3":
     print("Uso correcto")
