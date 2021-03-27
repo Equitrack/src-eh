@@ -16,7 +16,9 @@ def useError():
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py -f logs.txt')
 
-if nArgs == "4":
+if nArgs == "3":
     print("Uso correcto")
+    nameArgs=str(sys.argv[1])
+    print("Nombre del argumento: " +nameArgs)
 else:
     useError()
