@@ -2,9 +2,11 @@
 import sys
 
 # verificar que haya parámetros
-print("Número de parámetros: "+ len(sys.argv))
+print("Número de parámetros: "+ str(len(sys.argv)))
 
-if str(len(sys.argv)) == "1":
+nParams = str(len(sys.argv))
+
+if nParams == "3":
     print("Use:")
     print("./testParamSystem.py <option> <file/text>")
     print("Options:")
@@ -13,3 +15,4 @@ if str(len(sys.argv)) == "1":
     print('Examples:')
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py -f logs.txt')
+
