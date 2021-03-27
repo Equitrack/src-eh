@@ -4,6 +4,8 @@ import os.path
 from os import path
 
 numArgs = str(len(sys.argv))
+nameArgs = str(sys.argv[1])
+message = str(sys.argv[2])
 
 def useError():
     print("Usage: ./testParamSystem.py <option> <file/text>")
@@ -27,8 +29,8 @@ def sendMessage(option):
 # validate correct num of params
 if numArgs == "3":
 
-    nameArgs = str(sys.argv[1])
-    message = str(sys.argv[2])
+    #nameArgs = str(sys.argv[1])
+    #message = str(sys.argv[2])
 
     # Select mode use
 
