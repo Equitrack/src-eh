@@ -1,9 +1,6 @@
 #!/bin/python3
 import sys
 
-# verificar que haya parámetros
-print("Número de parámetros: "+ str(len(sys.argv)))
-
 nArgs = str(len(sys.argv))
 
 def useError():
@@ -17,16 +14,27 @@ def useError():
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py --loadFile logs.txt')
 
+def checkFile(nameFile):
+    print("Check if exist: " + nameFile)
+
+# validate correct num of params
 if nArgs == "3":
-    print("Uso correcto")
+
     nameArgs = str(sys.argv[1])
-    print("Nombre del argumento: " + nameArgs)
+
+    # Select mode use
+
     if nameArgs == "-m" or nameArgs == "--message":
         print("Send message")
+
     elif nameArgs == "-l" or nameArgs == "--load":
+        checkFile(str(sys.argv[2]))
         print("Send file")
+
     elif nameArgs == "-r" or nameArgs == "--read":
+        checkFile(str(sys.argv[2]))
         print("Read File")
+
     else:
         useError()
 else:
