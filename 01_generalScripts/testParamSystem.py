@@ -1,7 +1,7 @@
 #!/bin/python3
 import sys
 
-nArgs = str(len(sys.argv))
+numArgs = str(len(sys.argv))
 
 def useError():
     print("Use:")
@@ -18,9 +18,10 @@ def checkFile(nameFile):
     print("Check if exist: " + nameFile)
 
 # validate correct num of params
-if nArgs == "3":
+if numArgs == "3":
 
     nameArgs = str(sys.argv[1])
+    message = str(sys.argv[2])
 
     # Select mode use
 
@@ -28,7 +29,7 @@ if nArgs == "3":
         print("Send message")
 
     elif nameArgs == "-l" or nameArgs == "--load":
-        checkFile(str(sys.argv[2]))
+        checkFile(message)
         print("Send file")
 
     elif nameArgs == "-r" or nameArgs == "--read":
