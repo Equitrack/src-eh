@@ -6,8 +6,7 @@ from os import path
 numArgs = str(len(sys.argv))
 
 def useError():
-    print("Use:")
-    print("./testParamSystem.py <option> <file/text>")
+    print("Usage: ./testParamSystem.py <option> <file/text>")
     print("Options:")
     print("\t-m, --message\tSend message")
     print("\t-l, --load\tSend file")
