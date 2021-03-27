@@ -27,6 +27,7 @@ def sendMessage(option):
     # Check type data: message, load or read file.
 
     # . . . [ Continue ]
+    if option == message
 
 # validate correct num of params
 if numArgs == "3":
