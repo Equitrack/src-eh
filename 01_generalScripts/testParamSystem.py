@@ -4,9 +4,9 @@ import sys
 # verificar que haya parámetros
 print("Número de parámetros: "+ str(len(sys.argv)))
 
-nParams = str(len(sys.argv))
+nArgs = str(len(sys.argv))
 
-if nParams == "3":
+def useError():
     print("Use:")
     print("./testParamSystem.py <option> <file/text>")
     print("Options:")
@@ -16,3 +16,7 @@ if nParams == "3":
     print('\t./testParamSystem.py -m "Low disk space"')
     print('\t./testParamSystem.py -f logs.txt')
 
+if nArgs == "4":
+    print("Uso correcto")
+else:
+    useError()
