@@ -33,7 +33,7 @@ if numArgs == "3":
     # Select mode use
 
     if nameArgs == "-m" or nameArgs == "--message":
-        print("Send message")
+        sendMessage("message")
 
     elif nameArgs == "-l" or nameArgs == "--load":
         checkFile(message, "load")
@@ -45,4 +45,3 @@ if numArgs == "3":
         useError()
 else:
     useError()
-
