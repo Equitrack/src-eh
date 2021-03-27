@@ -1,5 +1,7 @@
 #!/bin/python3
 import sys
+import os.path
+from os import path
 
 numArgs = str(len(sys.argv))
 
@@ -15,7 +17,7 @@ def useError():
     print('\t./testParamSystem.py --loadFile logs.txt')
 
 def checkFile(nameFile):
-    print("Check if exist: " + nameFile)
+    print("Check if exist: " + str(path.exists(nameFile)))
 
 # validate correct num of params
 if numArgs == "3":
