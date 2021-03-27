@@ -21,7 +21,13 @@ if nArgs == "3":
     print("Uso correcto")
     nameArgs = str(sys.argv[1])
     print("Nombre del argumento: " + nameArgs)
-    if nameArgs == "-m" or nameArgs == "--messsage":
-        print("Elegiste enviar mensaje")
+    if nameArgs == "-m" or nameArgs == "--message":
+        print("Send message")
+    elif nameArgs == "-l" or nameArgs == "--load":
+        print("Send file")
+    elif nameArgs == "-r" or nameArgs == "--read":
+        print("Read File")
+    else:
+        useError()
 else:
     useError()
