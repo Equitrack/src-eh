@@ -10,6 +10,7 @@ url = "https://api.telegram.org/bot" + token + "/getUpdates"
 response = requests.get(url)
 
 # Muestra los headers de respuesta
+print("[*****Headers*****]\n")
 for i in response.headers:
     print(i + ": " + response.headers[i])
 
