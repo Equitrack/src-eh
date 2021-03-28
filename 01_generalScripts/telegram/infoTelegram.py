@@ -18,7 +18,7 @@ if response.status_code == 200:
     f = open("response.json", "w")
     f.write(response.text)
     f.close()
-    
+    print("\n[****Contenido****]")    
     # Pretty Printing JSON string back
     print(json.dumps(json.loads(response.text), indent = 4, sort_keys=True))
         
