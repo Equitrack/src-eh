@@ -7,6 +7,26 @@ numArgs = str(len(sys.argv))
 nameArgs = str(sys.argv[1])
 message = str(sys.argv[2])
 
+def main():
+    # validate correct num of params
+    if numArgs == "3":
+
+        # Select mode use
+        if nameArgs == "-m" or nameArgs == "--message":
+            sendMessage("message")
+
+        elif nameArgs == "-l" or nameArgs == "--load":
+            checkFile(message, "load")
+
+        elif nameArgs == "-r" or nameArgs == "--read":
+            checkFile(message, "read")
+
+        else:
+            useError()
+    else:
+        useError()
+
+    
 def useError():
     print("Usage: ./testParamSystem.py <option> <file/text>")
     print("Options:")
@@ -27,23 +47,6 @@ def sendMessage(option):
     # Check type data: message, load or read file.
 
     # . . . [ Continue ]
-    if option == message
+    print("option: " + option)
 
-# validate correct num of params
-if numArgs == "3":
-
-    # Select mode use
-
-    if nameArgs == "-m" or nameArgs == "--message":
-        sendMessage("message")
-
-    elif nameArgs == "-l" or nameArgs == "--load":
-        checkFile(message, "load")
-
-    elif nameArgs == "-r" or nameArgs == "--read":
-        checkFile(message, "read")
-
-    else:
-        useError()
-else:
-    useError()
+main()
