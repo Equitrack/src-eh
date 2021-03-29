@@ -6,9 +6,10 @@ import os.path
 from os import path
 
 
-# C H A N G E _ T H I S _ V A L U E _ T O K E N
+# C H A N G E _ T H I S _ V A L U E S _ "T O K E N" _ A N D _ "C H A T _ I D"
 
 token="1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" 
+chat_id ='-595788453'
 
 numArgs = str(len(sys.argv))
 
@@ -52,15 +53,14 @@ def checkFile(nameFile, option):
             text = open(message, "r")
             sendMessage(text.read())
         elif option == "load":
-
-            print("Cargando el fichero")
-            sendFile(nameFile)
+            print("Cargando el fichero")            
+            # [Continue here ...]
+            # Create function send file
         else:
             print("The file: " + '"' + nameFile + '"' + " does not exists")
 
 def sendMessage(textPlain):
     url = 'https://api.telegram.org/bot' + token + "/sendMessage"
-    chat_id ='-595788453',
     data = {'chat_id' : chat_id,
             'text' : textPlain,
             'disable_notification': 'true'}
