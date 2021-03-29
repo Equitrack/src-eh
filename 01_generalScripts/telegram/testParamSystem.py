@@ -1,4 +1,4 @@
-G#!/bin/python3
+#!/bin/python3
 import requests
 import sys
 import os.path
@@ -74,7 +74,7 @@ def sendMessage(textPlain):
     
     print("\n[*****Contenido*****]")
     if response.status_code == 200:
-        print(response.text)
+        print(json.dumps(json.loads(response.text), indent = 4, sort_keys=True))
     else:
         print("Status code: " + str((response.status_code)))
 
