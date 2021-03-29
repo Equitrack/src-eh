@@ -4,8 +4,10 @@ import os.path
 from os import path
 
 numArgs = str(len(sys.argv))
-nameArgs = str(sys.argv[1])
-message = str(sys.argv[2])
+
+if numArgs == "3":
+    nameArgs = str(sys.argv[1])
+    message = str(sys.argv[2])
 
 def main():
     # validate correct num of params
