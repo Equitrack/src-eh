@@ -3,7 +3,7 @@ Los grupos sirven para organizar un conjunto de usuarios, y gestionar de mejor m
 
 - Crear grupo
 ```
-gropadd <nombreGrupo>
+groupadd <nombreGrupo>
 ```
 - Cambiar el grupo de un directorio/fichero
 ```
