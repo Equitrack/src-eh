@@ -51,11 +51,15 @@ def sendMessage(option):
     # . . . [ Continue ]
     print("option: " + option)
 
-    if option == "read":
+    if option == "message":
+        print("Tu mensaje es: " + message)
+    elif option == "read": 
         # Read file
-        text = open(nameArgs, "r")
+        text = open(message, "r")
         print(text.read())
+    elif option == "load":
+        print("Cargando el fichero")
     else:
-        print("Error al leer el fichero")
+        print(useError)
 
 main()
