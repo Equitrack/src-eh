@@ -53,6 +53,7 @@ def sendMessage(option):
         # Read file
         text = open(nameArgs, "r")
         print(text.read())
-    if option 
+    else:
+        print("Error al leer el fichero")
 
 main()
