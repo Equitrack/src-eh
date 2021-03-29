@@ -21,7 +21,7 @@ def main():
 
         # Select mode use
         if nameArgs == "-m" or nameArgs == "--message":
-            sendMessage("message")
+            sendMessage(message)
 
         elif nameArgs == "-l" or nameArgs == "--load":
             checkFile(message, "load")
@@ -65,7 +65,7 @@ def sendMessage(textPlain):
             'disable_notification': 'true'}
     header = {"Content-Type": "application/json"}
 
-    response = requests.port(url, data, header)
+    response = requests.post(url, data, header)
 
     # View headers
     for i in response.headers:
