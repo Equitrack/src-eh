@@ -49,4 +49,10 @@ def sendMessage(option):
     # . . . [ Continue ]
     print("option: " + option)
 
+    if option == "read":
+        # Read file
+        text = open(nameArgs, "r")
+        print(text.read())
+    if option 
+
 main()
