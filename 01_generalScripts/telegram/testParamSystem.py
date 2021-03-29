@@ -68,9 +68,11 @@ def sendMessage(textPlain):
     response = requests.post(url, data, header)
 
     # View headers
+    print("[*****Headers*****]")
     for i in response.headers:
         print(i + ": " + response.headers[i])
-
+    
+    print("[\n*****Contenido*****]")
     if response.status_code == 200:
         print(response.text)
     else:
