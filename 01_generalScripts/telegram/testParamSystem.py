@@ -1,4 +1,4 @@
-#!/bin/python3
+G#!/bin/python3
 import requests
 import sys
 import os.path
@@ -72,7 +72,7 @@ def sendMessage(textPlain):
     for i in response.headers:
         print(i + ": " + response.headers[i])
     
-    print("[\n*****Contenido*****]")
+    print("\n[*****Contenido*****]")
     if response.status_code == 200:
         print(response.text)
     else:
