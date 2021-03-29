@@ -1,7 +1,13 @@
 #!/bin/python3
+import requests
 import sys
 import os.path
 from os import path
+
+
+# C H A N G E _ T H I S _ V A L U E _ T O K E N
+
+token="1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" 
 
 numArgs = str(len(sys.argv))
 
@@ -41,25 +47,33 @@ def useError():
 
 def checkFile(nameFile, option):
     if path.exists(nameFile) == True:
-        sendMessage(option)
+        if option == "read": 
+            text = open(message, "r")
+            sendMessage(text.read())
+        elif option == "load":
+
+            print("Cargando el fichero")
+            sendFile(nameFile)
+        else:
+            print("The file: " + '"' + nameFile + '"' + " does not exists")
+
+def sendMessage(textPlain):
+    url = 'https://api.telegram.org/bot' + token + "/sendMessage"
+    chat_id ='-595788453',
+    data = {'chat_id' : chat_id,
+            'text' : textPlain,
+            'disable_notification': 'true'}
+    header = {"Content-Type": "application/json"}
+
+    response = requests.port(url, data, header)
+
+    # View headers
+    for i in response.headers:
+        print(i + ": " + response.headers[i])
+
+    if response.status_code == 200:
+        print(response.text)
     else:
-        print("The file: " + '"' + nameFile + '"' + " does not exists")
-
-def sendMessage(option):
-    # Check type data: message, load or read file.
-
-    # . . . [ Continue ]
-    print("option: " + option)
-
-    if option == "message":
-        print("Tu mensaje es: " + message)
-    elif option == "read": 
-        # Read file
-        text = open(message, "r")
-        print(text.read())
-    elif option == "load":
-        print("Cargando el fichero")
-    else:
-        print(useError)
+        print("Status code: " + str((response.status_code)))
 
 main()
