@@ -21,4 +21,5 @@ if response.status_code == 200:
     print(response.text)
 else:
     print("Response status: " + str(response.status_code))
+    print("Response text: " + response.text)
 
