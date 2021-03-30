@@ -12,11 +12,11 @@ chat_id ='-595788453'
 path = open("/home/tony/Documents/Reportes/Reporte_semanal_Entrega_12.pdf", 'rb')
 
 data = {'chat_id': chat_id,
-        'document' : "'" + path "'"}
+        'document' : "'" + path + "'"}
 
 header = {"Content-Type": "application/json"}
 
-response = requests.post(url, data), header)
+response = requests.post(url, data, header)
 
 if response.status_code == 200:
     print(response.text)
