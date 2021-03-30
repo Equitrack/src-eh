@@ -2,7 +2,7 @@
 
 import os
 import sys
-from dropbox.client import DropboxClient
+from dropbox import dropbox_client
 
 
 token = "zq3_7AAWlqcAAAAAAAAAAVNUC_q8o5Ia-FHIvDs2Bz92qum47BCGqORD7tr-JdtO"
