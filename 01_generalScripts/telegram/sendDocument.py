@@ -9,10 +9,10 @@ url = "https://api.telegram.org/bot" + token + "/sendDocument"
 
 chat_id ='-595788453'
 
-path = open("/home/tony/Documents/Reportes/Reporte_semanal_Entrega_12.pdf", 'rb')
+path = '%2Fhome%2Ftony%2FDocuments%2FReportes%2FReporte_semanal_Entrega_12.pdf'
 
 data = {'chat_id': chat_id,
-        'document' : "'" + path + "'"}
+        'document' : open(path, 'rb')}
 
 header = {"Content-Type": "application/json"}
 
