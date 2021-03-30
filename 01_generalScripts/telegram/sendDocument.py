@@ -8,10 +8,12 @@ url = "https://api.telegram.org/bot" + token + "/sendDocument"
 
 chat_id ='-595788453'
 
-path = '@/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt'
+path = '/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt'
+
+f = open('/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt', 'rb')
 
 data = {'chat_id': chat_id,
-        'document' : path }
+        'document' : f }
 
 response = requests.post(url, data)
 
