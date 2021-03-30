@@ -9,9 +9,7 @@ url = "https://api.telegram.org/bot" + token + "/sendDocument"
 chat_id ='-595788453' 
 
 data = {'chat_id': chat_id,
-        'document' : '@/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt',
-        'disable_notification': 'true'}
-
+        'document' : '/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt'}
 header = {"Content-Type": "application/json"}
 
 response = requests.post(url, data, header)
