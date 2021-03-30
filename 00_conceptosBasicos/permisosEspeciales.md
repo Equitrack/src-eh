@@ -47,3 +47,7 @@ Es bastante útil si queremos configurar un directorio para colaborar diferentes
 chmod g+s "directorio" <br>
 chmod 2555 "fichero" <br>
 
+## Buscar los binarios con SUID
+```
+find / -perm -u=s -type f 2>/dev/null
+```
