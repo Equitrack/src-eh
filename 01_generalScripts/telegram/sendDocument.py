@@ -13,9 +13,7 @@ path = str("/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/do
 data = {'chat_id': chat_id,
         'document' : path }
 
-header = {"Content-Type": "application/json"}
-
-response = requests.post(url, data, header)
+response = requests.post(url, data)
 
 if response.status_code == 200:
     print(response.text)
