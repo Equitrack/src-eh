@@ -2,7 +2,7 @@
 
 ## Sticky Bit
 
-Los elementos que hay un directorio Sticky Bit, solo pueden ser renombrados o borrados por su propietario o bien por root. <br>
+Los elementos que hay en un directorio Sticky Bit, solo pueden ser renombrados o borrados por su propietario o bien por root. <br>
 El resto de usuarios que tengan permisos de lectura y escritura, los podrán leer y modificar, pero no borrar. <br>
 
 ### Activación
