@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import requests
+from urllib.parse import urlparse
 
 token = "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
 
@@ -15,7 +16,7 @@ data = {'chat_id': chat_id,
 
 header = {"Content-Type": "application/json"}
 
-response = requests.post(url, data, header)
+response = requests.post(url, urlparse(data), header)
 
 if response.status_code == 200:
     print(response.text)
