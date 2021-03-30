@@ -6,10 +6,13 @@ token = "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
 
 url = "https://api.telegram.org/bot" + token + "/sendDocument"
 
-chat_id ='-595788453' 
+chat_id ='-595788453'
+
+path = "/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt"
 
 data = {'chat_id': chat_id,
-        'document' : '/home/tony/Documents/mastermind/src-eh/01_generalScripts/telegram/document.txt'}
+        'document' : path }
+
 header = {"Content-Type": "application/json"}
 
 response = requests.post(url, data, header)
