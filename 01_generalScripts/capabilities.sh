@@ -6,6 +6,7 @@ pathFile=`readlink -f $(which python3)`
 
 if [ -f "$pathFile" ]; then
    response=`getcap $pathFile | awk '{ print $2}'`;
+   echo "RESPONSE: $response"
    if [[ "$response" -eq "cap_setuid=ep" ]]; then
       setcap -r $pathFile
       echo "DELETE capability"
