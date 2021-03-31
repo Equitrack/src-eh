@@ -92,3 +92,16 @@ El comienzo del path, se debería ver de la siguiente forma usando echo $PATH
 ```
 /tmp:/usr/local/bin ...
 ```
+
+Se ejecuta el script:
+```
+./binario
+```
+Se debería mostrar lo siguiente:
+```
+Ejecutando con el usuario: (/usr/bin/whoami): ruta absoluta
+root
+Ejecutando con el usuario: (whoami): ruta realtiva
+bash-5.0#
+```
+Si todo se realizó bien, en este punto ya se tiene acceso a root.
