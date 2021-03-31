@@ -55,10 +55,14 @@ Entonces estableciendo ese comando, se pude realizar el escalamiento. <br>
 
 Una vez creado, se compila. Se debe hacer el el usuario root, o posteriormente cambiar el propietario y el grupo al que pertenece.
 ```
-gcc programa.c -o binario
-
 # Sin ser el usuario root pero con permisos de sudo
+gcc programa.c -o binario
 sudo chown root:root binario
+sudo chmod 4755 binario
+
+# Siendo el usuario root
+gcc programa.c -o binario
+chmod 4755 binario
 
 
 ```
