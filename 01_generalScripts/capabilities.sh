@@ -4,6 +4,9 @@
 
 pathFile=`readlink -f $(which python3)`
 
+exit 0
+
+
 if [ -f "$pathFile" ]; then
    setcap cap_setuid+ep $pathFile
    echo "Status capability: $(getcap $pathFile)"
