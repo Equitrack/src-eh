@@ -113,16 +113,8 @@ la -la
 ```
 Y la salida debería ser la siguiente
 ```
-
+root
+-rw-r--r--. 1 root tony     0 Mar 30 18:28 file
 ```
-
-
-
-
-
-
-
-
-
-
+El fichero fué creado por el usuario root.
 
