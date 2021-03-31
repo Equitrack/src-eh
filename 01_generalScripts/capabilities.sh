@@ -11,5 +11,5 @@ else
    echo "Python3 no existe"
 fi
 
-
 # delete cap
+# setcap -r $pathFile
