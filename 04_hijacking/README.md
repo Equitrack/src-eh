@@ -34,7 +34,7 @@ Para este documentó se hará aprovechandose de un binario creado por root, y co
 
 ## Creando binario
 
-Crearemos nuestro propio binario que ejecutará un 'whoami' escrito en C.
+Crearemos nuestro propio binario que ejecutará un 'whoami' escrito en C. Llamado 'programa.c'
 
 ```
 #include <stdio.h>
