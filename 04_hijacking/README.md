@@ -104,4 +104,25 @@ root
 Ejecutando con el usuario: (whoami): ruta realtiva
 bash-5.0#
 ```
-Si todo se realizó bien, en este punto ya se tiene acceso a root.
+Si todo se realizó bien, en este punto ya se tiene acceso a root. <br>
+Se puede compobar ejecutando:
+```
+whoami
+touch file
+la -la
+```
+Y la salida debería ser la siguiente
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
