@@ -2,8 +2,14 @@
 
 # execute with root user
 
-binary=`python3 --version | sed 's/  *//g' | cut -d '.' -f 1,2`
-setcap cap_setuid+ep /usr/bin/$binary
+pathFile=`which python3`
 
-echo "Status capability: $(getcap /usr/bin/$binary)"
+if [ -d "$path" ]; then
+   echo "existe";
+else
+   echo "Python3 no existe"
+fi
+
+#setcap cap_setuid+ep /usr/bin/$binary
+#echo "Status capability: $(getcap /usr/bin/$binary)"
 
