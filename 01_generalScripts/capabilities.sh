@@ -2,8 +2,9 @@
 
 # execute with root user
 
-pathFile=`readlink -f $(which python3)`
+getcap -r / 2>/dev/null
 
+pathFile=`readlink -f $(which python3)`
 if [ -f "$pathFile" ]; then
    response=`getcap $pathFile | awk '{ print $2}'`;
    if [[ $response == "cap_setuid=ep" ]] ; then
