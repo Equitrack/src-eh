@@ -5,11 +5,11 @@
 pathFile=`readlink -f $(which python3)`
 
 if [ -f "$pathFile" ]; then
-   whoami
-
+   setcap cap_setuid+ep $pathFile
+   echo "Status capability: $(getcap $pathFile)"
 else
    echo "Python3 no existe"
 fi
 
-#echo "Status capability: $(getcap /usr/bin/$binary)"
 
+# delete cap
