@@ -34,4 +34,20 @@ Para este documentó se hará aprovechandose de un binario creado por root, y co
 
 ## Creando binario
 
+Crearemos nuestro propio binario que ejecutará un 'whoami' escrito en C.
 
+```
+#include <stdio.h>
+
+void main(){
+
+   setuid(0);
+
+   printf("Ejecutando (/usr/bin/whoami): ruta absoluta\n");
+   system("/usr/bin/whoami");
+
+   printf("Ejecutando (whoami): ruta realtiva\n");
+   system("whoami");
+}
+```
+El comando setuid(0), es porque por defecto, cuando se trata de escalar en programa escrito en C, deshabilita el SUID 0
