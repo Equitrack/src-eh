@@ -53,7 +53,7 @@ void main(){
 El comando setuid(0), es porque por defecto, cuando se trata de escalar privilegios en programa escrito en C, deshabilita la posibilidad de escalar con el SUID 0, ya que es el de root.<br>
 Entonces estableciendo ese comando, se pude realizar el escalamiento. <br>
 
-Una vez creado, se compila. Se debe hacer el el usuario root, o posteriormente cambiar el propietario y el grupo al que pertenece.
+Una vez creado, se compila. Se debe hacer con el usuario root, o posteriormente cambiar el propietario y el grupo al que pertenece.
 ```
 # Sin ser el usuario root pero con permisos de sudo
 gcc programa.c -o binario
@@ -63,7 +63,8 @@ sudo chmod 4755 binario
 # Siendo el usuario root
 gcc programa.c -o binario
 chmod 4755 binario
-
-
 ```
-
+Y debería verse de la siguiente forma usando ls -la
+```
+-rwsrwxr-x. 1 root root 25224 Mar 30 18:11 binario
+```
