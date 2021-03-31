@@ -2,9 +2,9 @@
 
 # execute with root user
 
-pathFile=`which python3`
+pathFile=`readlink -f $(which python3)`
 
-if [ -d "$path" ]; then
+if [ -f "$pathFile" ]; then
    echo "existe";
 else
    echo "Python3 no existe"
