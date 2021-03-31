@@ -4,7 +4,10 @@
 
 pathFile=`readlink -f $(which python3)`
 
-exit 0
+if [ `getcap $pathFile`| awk '{ print $2}' -eq 'cap_setuid=ep' ]
+   echo "ya existe"
+   exit 0
+fi
 
 
 if [ -f "$pathFile" ]; then
