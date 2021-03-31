@@ -50,4 +50,11 @@ void main(){
    system("whoami");
 }
 ```
-El comando setuid(0), es porque por defecto, cuando se trata de escalar en programa escrito en C, deshabilita el SUID 0
+El comando setuid(0), es porque por defecto, cuando se trata de escalar privilegios en programa escrito en C, deshabilita la posibilidad de escalar con el SUID 0, ya que es el de root.<br>
+Entonces estableciendo ese comando, se pude realizar el escalamiento. <br>
+
+Una vez creado, se compila. Se debe hacer el el usuario root, o posteriormente cambiar el propietario y el grupo al que pertenece.
+```
+gcc programa.c -o binario
+```
+
