@@ -43,10 +43,10 @@ void main(){
 
    setuid(0);
 
-   printf("Ejecutando (/usr/bin/whoami): ruta absoluta\n");
+   printf("Ejecutando con el usuario: (/usr/bin/whoami): ruta absoluta\n");
    system("/usr/bin/whoami");
 
-   printf("Ejecutando (whoami): ruta realtiva\n");
+   printf("Ejecutando con el usuario: (whoami): ruta realtiva\n");
    system("whoami");
 }
 ```
@@ -56,5 +56,10 @@ Entonces estableciendo ese comando, se pude realizar el escalamiento. <br>
 Una vez creado, se compila. Se debe hacer el el usuario root, o posteriormente cambiar el propietario y el grupo al que pertenece.
 ```
 gcc programa.c -o binario
+
+# Sin ser el usuario root pero con permisos de sudo
+sudo chown root:root binario
+
+
 ```
 
