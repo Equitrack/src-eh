@@ -16,7 +16,7 @@ if __name__ == "__main__":
             print("Executing ...")
             keys = str(sys.argv[2])
             for i in keys:
-                print(i + " in " + keys[i])
+                print(i)
         else:
             print("Error: Status code [" + response.status_code + "]")
     else:
