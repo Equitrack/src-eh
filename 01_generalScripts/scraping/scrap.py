@@ -14,6 +14,7 @@ if __name__ == "__main__":
         response = requests.get(sys.argv[1])
         if response.status_code == 200:
             print("Executing ...")
+            print(sys.argv[2])
         else:
             print("Error: Status code [" + response.status_code + "]")
     else:
