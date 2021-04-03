@@ -15,9 +15,8 @@ if __name__ == "__main__":
         if response.status_code == 200:
             print("Executing ...")
             keys = str(sys.argv[2])
+            keys = ','.join(keys)
             print(keys)
-            for i in keys.join:
-                print(i)
         else:
             print("Error: Status code [" + response.status_code + "]")
     else:
