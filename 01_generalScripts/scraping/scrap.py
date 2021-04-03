@@ -3,6 +3,7 @@
 import os
 import sys
 import requests
+import re
 
 def error_use():
     print("Used: " + sys.argv[0] + " <url> " + "<words> \n")
@@ -15,8 +16,7 @@ if __name__ == "__main__":
         if response.status_code == 200:
             print("Executing ...")
             keys = str(sys.argv[2])
-            keys = ','.join(keys)
-            print(keys)
+            
         else:
             print("Error: Status code [" + response.status_code + "]")
     else:
