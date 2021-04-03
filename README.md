@@ -1,3 +1,3 @@
 # Resources ethical hacking
 
-Change test
+Repositorio personal, son scripts y notas dirigidas al pentest
