@@ -9,3 +9,7 @@ if __name__ == "__main__":
         print("Dos argumentos")
     else:
         print("Diferente de dos argumentos")
+        errorUse()
+
+def errorUse():
+    print("Used: " + sys.argv[0])
