@@ -7,7 +7,7 @@ import requests
 def error_use():
     print("Used: " + sys.argv[0] + " <url> " + "<words> \n")
     print("\tExample:")
-    print("\t" + sys.argv[0] + " https://supermex.com.mx " + '"{2060, 2070, 2080}"')
+    print("\t" + sys.argv[0] + " https://supermex.com.mx " + '"2060, 2070, 2080"')
 
 if __name__ == "__main__":
     if(len(sys.argv) == 3):
@@ -15,6 +15,7 @@ if __name__ == "__main__":
         if response.status_code == 200:
             print("Executing ...")
             keys = str(sys.argv[2])
+            print(keys)
             for i in keys.join:
                 print(i)
         else:
