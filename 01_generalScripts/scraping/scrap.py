@@ -11,8 +11,10 @@ def error_use():
 if __name__ == "__main__":
     print(len(sys.argv))
     if(len(sys.argv) == 2):
-        print("Continue..."
-    else:
-        error_use();
+        print("Continue...")
+    else
+        error_use()
+
+
 
 
