@@ -2,4 +2,7 @@
 
 import os
 
-os.system("echo hola mundo")
+if __name__ == "__main__":
+    print("Function main")
+
+# os.system("/usr/local/bin/dirhunt ")
