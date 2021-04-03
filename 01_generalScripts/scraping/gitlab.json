@@ -1,0 +1,642 @@
+{
+    "current_processed_count": 1,
+    "domains": [
+        "gitlab.ctin.gadt.amxdigital.net"
+    ],
+    "index_of_processors": [],
+    "processed": [
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": "directory",
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/users/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/users/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/search",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/search \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/search",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/dashboard",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/dashboard \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/dashboard",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/admin",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/admin \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/admin",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/api",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/api \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/api",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/groups/new",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/groups/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/groups/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/users",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/users \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/users",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/profile",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/profile \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/profile",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/autocomplete/users",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/autocomplete/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/autocomplete/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/help",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/help \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/help",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/projects/new",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/projects/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/projects/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/groups/%2A/edit",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/groups/%2A/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/groups/%2A/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/groups/new",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/groups/new \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/dashboard",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/dashboard \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/admin",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/admin \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/users",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/users \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/projects/new",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/projects/new \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/groups/%2A/edit",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/groups/%2A/edit \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/users/sign_in \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/api",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/api \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/projects/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/projects/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/explore",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/users/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/users/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/profile",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/profile \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/explore",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/explore \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/explore",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/groups/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/groups/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/explore/groups",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/autocomplete/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/autocomplete/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/groups/%2A/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/groups/%2A/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        },
+        {
+            "crawler_url": {
+                "depth": 2,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "301"
+                ],
+                "type": null,
+                "url": {
+                    "address": "http://gitlab.ctin.gadt.amxdigital.net/explore/groups",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[301]\u001b[39m\u001b[49m http://gitlab.ctin.gadt.amxdigital.net/explore/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttps://gitlab.ctin.gadt.amxdigital.net/explore/",
+            "processor_class": "ProcessRedirect",
+            "status_code": 301
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/search",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/search \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/explore",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/explore \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/explore/",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/explore/ \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/explore/groups",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/explore/groups \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "generic",
+                    "200"
+                ],
+                "type": null,
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net/help",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[92m[200]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/help \u001b[93m (Generic)\u001b[39m\u001b[49m\u001b[34m\n    Index file found: \u001b[39m\u001b[49mindex.php",
+            "processor_class": "GenericProcessor",
+            "status_code": 200
+        },
+        {
+            "crawler_url": {
+                "depth": 3,
+                "exists": null,
+                "flags": [
+                    "redirect",
+                    "302"
+                ],
+                "type": "directory",
+                "url": {
+                    "address": "https://gitlab.ctin.gadt.amxdigital.net",
+                    "domain": "gitlab.ctin.gadt.amxdigital.net"
+                }
+            },
+            "line": "\u001b[94m[302]\u001b[39m\u001b[49m https://gitlab.ctin.gadt.amxdigital.net/ \u001b[93m (Redirect)\u001b[39m\u001b[49m\u001b[34m\n    Redirect to: \u001b[39m\u001b[49mhttp://gitlab.ctin.gadt.amxdigital.net/users/sign_in",
+            "processor_class": "ProcessRedirect",
+            "status_code": 302
+        }
+    ],
+    "processing": [],
+    "urls_infos": [],
+    "version": "0.8.1"
+}
