@@ -8,8 +8,8 @@ from os import path
 
 # C H A N G E _ T H I S _ V A L U E S _ "T O K E N" _ A N D _ "C H A T _ I D"
 
-token="1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c" 
-chat_id ='-595788453'
+token = "1420238693:AAG3X6JrQRd5TyrvV3_45mFLwgAIdyxXV6c"
+chat_id = '-595788453'
 
 numArgs = str(len(sys.argv))
 
