@@ -11,7 +11,7 @@ set numberwidth=1
 set clipboard=unnamed
 
 " Resalta texto en la sitáxis de vim
-syntax enable
+syntax on
 
 " Mostrar los comandos que se están ejecutando
 set showcmd
@@ -48,7 +48,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'stephpy/vim-yaml'
 " Autopair
 Plug 'jiangmiao/auto-pairs'
+" ColorScheme
+Plug 'ghifarit53/tokyonight-vim'
 
+" Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " T H E M S
 Plug 'flazz/vim-colorschemes'
 
@@ -58,7 +63,9 @@ call plug#end()
 let mapleader = " "
 let NERDTreeQuitOnOpen = 1
 let g:indentLine_char = '▏'
-
+colorscheme gruvbox
+let g:airline_theme = 'base16_gruvbox_dark_hard'
+let g:airline#extensions#tabline#enabled = 1
 
 " M A P E O _ D E _ T E C L A S
 "
