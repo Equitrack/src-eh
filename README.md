@@ -2,7 +2,7 @@
 
 Repositorio personal, son scripts y notas dirigidas al pentest <br>
 Temas actuales:
-- nvim
+- nvim y plugins
 - permisos
-- envío de mensajes por telegram
-- SUID
+- permisos especiales de linux: SUID
+- Escaneo de puertos en sistemas operativos
